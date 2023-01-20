@@ -1,0 +1,74 @@
+<?xml version="1.1" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id">645743049227983</string>
+    <string name="fb_login_protocol_scheme">fb645743049227983</string>
+    <string name="facebook_client_token">1AZIJwhS8AwIk4GPJtGDNbHng0E</string>
+
+    <string name="app_name">DataHosting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Non connecté</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- nav menu texte !-->
+    <string name="menu_home">Accueil</string>
+    <string name="menu_tools">Paramètres</string>
+    <string name="menu_discord">Discord</string>
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="main">Général</string>
+    <string name="other">Autre</string>
+
+    <!-- Crédits text-->
+    <string name="title_credits">Crédits</string>
+    <string name="developper">Développer avec amour par Pierre-Henri Dupouy (alias ph1823)</string>
+    <string name="lib">Utilisation de l\'API Android, API AdMob pour les publicités et l\'API socket.io pour la console en temps réel</string>
+
+    <!-- settings text !-->
+    <string name="notif_title">Notifications</string>
+    <string name="update_title">Mises à jour</string>
+    <string name="update_text">Grand fan du projet ? Vous ne pouvvez pas attendre les mise à jour ? Alors soyez informer des dernière mise à jour du site web ou bien de l\'application !</string>
+
+    <string name="event_title">Evènements</string>
+    <string name="event_text">Vous souhaitez participer à nos événements ? Recevez une notification d\'un qu\'un évènement sera créer !</string>
+
+    <string name="promo_title">Promotions</string>
+    <string name="promo_text">Vous ne souhaitez rater aucune de nos promotions ? Alors soyez informe de nos promotions du moment en activant les notifications !</string>
+
+    <string name="expire_title">Expiration d\'un serveur</string>
+    <string name="expire_text">Vous avez peur que votre serveur expire et pensez que nos mail ne sont pas fiables ? Alors recevez une notification pour renouveler vos services !</string>
+
+    <string name="vibrate_title">Vibrations</string>
+    <string name="vibrate_text">Une vibration sera faîte si une pub au nombre de DataCoins à pu être trouvée !</string>
+
+    <string name="dc4_videos">Vidéo de 4 DataCoins</string>
+    <string name="dc2_videos">Vidéo de 2 DataCoins</string>
+    <string name="dc1_videos">Vidéo de 1 DataCoins</string>
+
+    <string name="dc0.5_videos">Vidéo de 0.5 DataCoins</string>
+    <string name="dc0.2_videos">Vidéo de 0.2 DataCoins</string>
+    <string name="dc0.1_videos">Vidéo de 0.1 DataCoins</string>
+    <!-- Preference Titles -->
+
+    <!-- Messages Preferences -->
+
+
+    <string name="menu_reward">Gagnez des DataCoins !</string>
+    <string name="menu_minecraft">Minecraft</string>
+    <string name="your_services">Vos services</string>
+    <string name="load_ad">Chargement..</string>
+    <string name="load_minecraft_error">Une erreur est survenu en tentant de chargé le serveur Minecraft</string>
+    <string name="welcome_user">Bienvenu, %username%.</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_maintenance">Maintenance</string>
+
+
+    <string name="channel_id">789654</string>
+    <string name="load">Chargement..</string>
+    <string name="channel_name">datahosting_other</string>
+    <string name="channel_description">Autres notifications</string>
+
+    <string name="launch">Lancement de la page %1$s</string>
+</resources>

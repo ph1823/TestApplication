@@ -1,0 +1,165 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace 'fr.ph1823.datahosting'
+    compileSdk 33
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "fr.ph1823.datahosting"
+        minSdkVersion 23
+        targetSdkVersion 33
+        versionCode 1324
+        versionName "1.3.24"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true // add this to enable multi-dex
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        packagingOptions {
+            exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.properties'
+            exclude 'META-INF/maven/com.squareup.okhttp3/okhttp/pom.xml'
+            exclude 'META-INF/maven/com.squareup.okio/okio/pom.xml'
+            exclude 'META-INF/maven/com.squareup.okio/okio/pom.properties'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.annotation:annotation:1.5.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.2'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    //implementation 'com.google.android:flexbox:1.1.1'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+
+    //implementation 'net.openid:appauth:0.11.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+    implementation 'com.google.android.gms:play-services-ads:21.4.0'
+    implementation 'com.google.android.gms:play-services-base:18.1.0'
+    // Import the Firebase BoM
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:30.1.0')
+
+    // Declare the dependencies for the Firebase Cloud Messaging and Analytics libraries
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-messaging'
+    implementation 'com.google.firebase:firebase-analytics'
+
+    //implementation 'com.google.android.ads:mediation-test-suite:3.0.0'
+
+    // Optional Google Play Services - Location and Basement
+    implementation 'com.google.android.gms:play-services-basement:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    implementation 'com.google.android.material:material:1.7.0'
+
+    //implementation 'com.squareup.picasso:picasso:2.71828'
+    //implementation 'androidx.browser:browser:1.3.0'
+
+    //Audience Network SDK
+    //implementation 'com.facebook.android:audience-network-sdk:5.8.0'
+    implementation 'com.google.ads.mediation:facebook:6.12.0.0'
+
+
+    // Vungle SDK
+    //implementation 'com.vungle:publisher-sdk-android:6.8.1'
+    implementation 'com.google.ads.mediation:vungle:6.12.0.0'
+
+    //AdCollony
+    // implementation 'com.adcolony:sdk:4.1.0'
+    implementation 'com.google.ads.mediation:adcolony:4.8.0.0'
+
+    //TapJoy
+    //implementation 'com.google.ads.mediation:tapjoy:12.9.0.0'
+
+    //MoPub
+    //implementation 'com.google.ads.mediation:mopub:5.18.0.0'
+
+    //AppLovin
+    // implementation "com.applovin:applovin-sdk:9.8.0"
+    implementation 'com.google.ads.mediation:applovin:11.6.1.0'
+
+    //InMobi
+    //implementation 'com.inmobi.monetization:inmobi-ads:9.0.2'
+    implementation 'com.google.ads.mediation:inmobi:10.1.2.1'
+
+    //IronSource
+    implementation 'com.ironsource.sdk:mediationsdk:7.2.6'
+    implementation 'com.google.ads.mediation:ironsource:7.2.6.0'
+
+    //Chart boost
+    //implementation 'com.chartboost:chartboost-sdk:8.0.2'
+    implementation 'com.google.ads.mediation:chartboost:9.1.1.0'
+
+    // Added for MobfoxSDK
+    // implementation 'com.github.mobfox:mfx-android-sdk:4.3.2'
+
+    // MobfoxSDK - Admob adapter
+    implementation 'com.github.mobfox:mfx-android-admob-adapter:4.3.2'
+    implementation 'com.android.volley:volley:1.2.1'
+
+
+    implementation 'com.google.android.play:app-update:2.0.1'
+
+    //MyTarget - Mediation
+    implementation 'com.google.ads.mediation:mytarget:5.16.3.0'
+
+
+    /*  implementation 'com.mintegral.msdk:mtgbanner:14.2.21'
+      implementation 'com.mintegral.msdk:mtgjscommon:14.2.21'
+      implementation 'com.mintegral.msdk:videocommon:14.2.21'
+      implementation 'com.mintegral.msdk:common:14.2.21'
+      implementation 'com.mintegral.msdk:alphab:14.2.21'
+      implementation 'com.mintegral.msdk:videojs:14.2.21'
+      implementation 'com.mintegral.msdk:playercommon:14.2.21'
+      implementation 'com.mintegral.msdk:reward:14.2.21'
+      implementation 'com.mintegral.msdk:mtgnative:14.2.21'
+      implementation 'com.mintegral.msdk:nativeex:14.2.21'
+      implementation 'com.mintegral.msdk:interstitialvideo:14.2.21'
+      implementation 'com.mintegral.msdk:interactiveads:14.2.21'*/
+
+    // implementation 'com.mintegral.thrid.adapter:admob_adapter:2.2.7'
+
+    //SONDAGE
+    //Theo
+    implementation 'com.theoremreach:theoremreach:3.4.6'
+    //Wannads
+    implementation "com.wannads:android-sdk:2.5.0"
+
+    //Consent
+    implementation 'com.google.android.ump:user-messaging-platform:2.0.0'
+
+    implementation ('io.socket:socket.io-client:2.0.1') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    /*
+    Login
+     */
+    //implementation 'com.google.android.gms:play-services-auth:20.4.0'
+    //implementation 'com.facebook.android:facebook-login:latest.release'
+
+    //googleServices { disableVersionCheck = true }
+}
